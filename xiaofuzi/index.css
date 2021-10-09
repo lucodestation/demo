@@ -1,0 +1,150 @@
+/***********************顶部*************************/
+*{
+    margin:0;
+    padding:0;
+    font-family:"宋体";
+    font-size:16px;
+    text-decoration:none;
+    border:0;
+}
+body{
+    background:url(img/headerbg.png) repeat-x;
+}
+#top{
+    width:100%;
+    height:32px;
+    background:url(img/top.png) repeat-x center;
+}
+#header{
+    width:100%;
+    height:141px;
+}
+#header-content{
+    width:1000px;
+    margin:0 auto;
+}
+#logo{
+    float:left;
+}
+#header-content ul{
+    float:right;
+    list-style:none;
+    padding-top:10px;
+}
+#header-content ul li{
+    float:left;
+    margin-left:20px;
+    background:url(img/navbg.png) no-repeat center;
+    height:104px;
+    padding:0 5px;
+}
+#header-content ul li a{
+    color:black;
+    text-decoration:none;
+    display:block;
+    width:16px;
+    height:94px;
+    text-align:center;
+    padding-top:10px;
+    line-height:20px;
+}
+#header-content ul li:hover{
+    background:rgb(159,39,21);
+}
+#header-content ul li:hover a{
+    color:white;
+}
+#header-content .home{
+    background:rgb(159,39,21);
+}
+#header-content .home a{
+    color:white;
+}
+#header-content .shop a{
+    color:rgb(159,39,21);
+}
+#header-content .home:hover a{
+    color:yellow;
+}
+/***********************顶部完*************************/
+/*****************************************************/
+#mainout{
+    width:100%;
+    background:url(img/mainbg.jpg) no-repeat bottom;
+}
+#main{
+    width:1000px;
+    margin:0 auto;
+    background:rgb(251,251,251);
+}
+#main a{
+    color:black;
+    font-size:12px;
+}
+
+
+
+
+/*****************************************************/
+/************************底部********************************/
+#footerout{
+    width:100%;
+    height:191px;
+    background:rgb(66,2,0);
+    position:relative;
+}
+#footerbg{
+    width:100%;
+    height:36px;
+    text-align:center;
+    position:absolute;
+    bottom:191px;
+}
+#footer{
+    width:1000px;
+    height:191px;
+    margin:0 auto;
+    background:url(img/footerbg.png) no-repeat;
+    color:rgb(213,213,213);
+}
+#footer p{
+    font-size:12px;
+}
+#footer .footertitle{
+    text-align:center;
+    line-height:40px;
+}
+#footer .footertitle a{
+    color:rgb(213,213,213);
+    font-size:12px;
+}
+#footer .footertitle a:hover{
+    color:yellow;
+}
+#footer div{
+    height:90px;
+    width:333px;
+    float:left;
+}
+#footer div img{
+    float:left;
+    padding-right:10px;
+}
+#footer .ftitle{
+    font-size:16px;
+    padding-bottom:20px;
+}
+#footer .one,#footer .two{
+    line-height:25px;
+}
+#footer .three,#footer .footerfooter{
+    text-align:right;
+}
+#footer .tel{
+    line-height:40px;
+    padding-top:38px;
+}
+#footer .footerfooter{
+    line-height:30px;
+}
+/************************底部完********************************/

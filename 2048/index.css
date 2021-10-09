@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	font-family: "Microsoft YaHei";
+	color: #424242;
+	background-color: #444;
+}
+h1 {
+	text-align: center;
+	color: #edcc62;
+	font-size: 66px;
+	margin: 0;
+}
+.game-map {
+	border: 5px solid #BBADA0;
+	width: 400px;
+	height: 400px;
+	margin: 10px auto 0;
+	background-color: #BBADA0;
+	border-radius: 20px;
+}
+	.game-map ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	.game-map li {
+		float: left;
+		width: 90px;
+		height: 90px;
+		border: 5px solid #BBADA0;
+		background-color: #CDC1B4;
+		font-size: 36px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 90px;
+		color: brown;
+		border-radius: 20px;
+	}
+/*
+
+	边框颜色		BBADA0
+	背景颜色		CDC1B4
+	数字2		字体颜色    776E65    背景颜色    EEE4DA
+	数字4		字体颜色    776E65    背景颜色    EDE0C8
+	数字8		字体颜色    F9F6F2    背景颜色    F2B179
+	数字16		字体颜色    F9F6F2    背景颜色    F59563
+	数字32		字体颜色    F9F6F2    背景颜色    F67C5F
+	数字64		字体颜色    F9F6F2    背景颜色    F65E3B
+	数字128		字体颜色    F9F6F2    背景颜色    EDCF72
+	数字256		字体颜色    F9F6F2    背景颜色    EDCC62
+	数字512		字体颜色    F9F6F2    背景颜色    EDC952
+	数字1024		字体颜色    F9F6F2    背景颜色    EDC53F
+	数字2048		字体颜色    F9F6F2    背景颜色    EDC22E
+	数字大于2048	字体颜色    F9F6F2    背景颜色    EDC22E
+
+*/
+
+	.game-map li.num2, .game-map li.num4, .game-map li.num8,
+	.game-map li.num16, .game-map li.num32, .game-map li.num64 { font-size: 60px; }
+	.game-map li.num128, .game-map li.num256, .game-map li.num512 { font-size: 46px; }
+	.game-map li.num1024, .game-map li.num2048, .game-map li.numgt2048 { font-size: 34px; }
+	.game-map li.num2, .game-map li.num4 { color: #776E65; }
+	.game-map li.num8,
+	.game-map li.num16, .game-map li.num32, .game-map li.num64,
+	.game-map li.num128, .game-map li.num256, .game-map li.num512,
+	.game-map li.num1024, .game-map li.num2048, .game-map li.numgt2048 { color: #F9F6F2; }
+	.game-map li.num2 { background-color: #EEE4DA; }
+	.game-map li.num4 { background-color: #EDE0C8; }
+	.game-map li.num8 { background-color: #F2B179; }
+	.game-map li.num16 { background-color: #F59563; }
+	.game-map li.num32 { background-color: #F67C5F; }
+	.game-map li.num64 { background-color: #F65E3B; }
+	.game-map li.num128 { background-color: #EDCF72; }
+	.game-map li.num256 { background-color: #EDCC62; }
+	.game-map li.num512 { background-color: #EDC952; }
+	.game-map li.num1024 { background-color: #EDC53F; }
+	.game-map li.num2048, .game-map li.numgt2048 { background-color: #EDC22E; }
+
+div.result {
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 16px;
+	color: #edcc62;
+	font-weight: bold;
+}

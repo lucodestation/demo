@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>仿百度首页布局</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="baidu.css" />
+	<script type="text/javascript" src="jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="baidu.js"></script>
+	<meta name="author" content="zhongwei_web@163.com">
+	<meta name="keywords" content="仿百度首页布局, 百度, 百度首页, 网页布局, 百度搜索, 百度一下，你就知道">
+	<meta name="description" content="全球最大的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关的搜索结果。"/>
+
+</head>
+<body>
+
+<!--
+
+01111010 01101000 01101111 01101110 01100111 
+01110111 01100101 01101001 01011111 01110111 
+01100101 01100010 01000000 00110001 00110110 
+00110011 00101110 01100011 01101111 01101101
+
+-->
+
+
+
+
+
+
+
+<!-- 
+	制作本网页是为了做网页界面开发练习。
+	如有侵权请联系作者（zhongwei_web@163.com）删除。
+	目前此网页尚有一些问题，仅供练习、参考。
+ -->
+
+
+
+
+
+
+	<!-- 顶部开始 -->
+	<div id="top">
+		<div class="nav">
+			<a href="http://news.baidu.com/">新闻</a>
+			<a href="https://www.hao123.com/">hao123</a>
+			<a href="https://map.baidu.com/">地图</a>
+			<a href="http://v.baidu.com/">视频</a>
+			<a href="https://tieba.baidu.com/index.html">贴吧</a>
+			<a href="http://xueshu.baidu.com/">学术</a>
+			<a href="javascript:;" class="log">登录</a>
+			<a href="javascript:;" class="set">设置</a>
+			<div class="set-box-small"><!-- 设置弹出盒（小） -->
+				<span><u></u><i></i></span>
+				<a href="javascript:;">搜索设置</a>
+				<a href="javascript:;">高级搜索</a>
+				<a href="javascript:;">开启预测</a>
+				<a href="javascript:;">搜索历史</a>
+			</div>
+			<a href="javascript:;" class="more">更多产品</a>
+			<div class="more-box"><!-- 更多产品弹出盒 -->
+				<p>更多产品</p>
+				<div>
+					<a href="https://zz.nuomi.com/"><u></u><span>糯米</span></a>
+					<a href="http://music.baidu.com/"><u style="background-position: -72px 0;width: 40px;"></u><span>音乐</span></a>
+					<a href="http://image.baidu.com/"><u style="background-position: -114px 0;width: 30px;"></u><span>图片</span></a>
+					<a href="https://zhidao.baidu.com/"><u style="background-position: -36px 0;"></u><span>知道</span></a>
+					<a href="https://wenku.baidu.com/"><u style="background-position: -147px 0;"></u><span>文库</span></a>
+					<a href="http://top.baidu.com/"><u style="background-position: -184px 0;"></u><span>风云榜</span></a>
+					<a href="https://www.baidu.com/more/">全部产品>></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 设置弹出盒（大） -->
+	<div id="set-box-big">
+		<p><a href="javascript:;">搜索设置</a><a href="javascript:;">高级搜索</a><span></span></p>
+		<!-- 搜索设置 -->
+		<div class="search-set">
+			<div class="left">
+				搜索框提示：<br />
+				搜索语言范围：<br />
+				搜索结果显示条数：<br />
+				实时预测功能：<br />
+				搜索历史记录：<br />
+				通栏浏览模式：<br />
+			</div>
+			<div class="center">
+				是否希望在搜索时显示搜索框提示<br />
+				设定您所要搜索的网页内容的语言<br />
+				设定您希望搜索结果显示的条数<br />
+				是否希望在您输入时实时展现搜索结果<br />
+				是否希望在搜索时显示您的搜索历史<br />
+				是否希望点击右侧推荐内容时打开通栏浏览模式<br />
+			</div>
+			<div class="right">
+				<form name="f2">
+					<label><input type="radio" checked="checked" name="s1">显示</label>
+					<label><input type="radio" name="s1">不显示</label><br />
+					<label><input type="radio" name="SL" value="0" checked="checked">全部语言</label>
+					<label><input type="radio" name="SL" value="1">仅简体中文</label>
+					<label><input type="radio" name="SL" value="2">仅繁体中文</label><br />
+					<select name="NR">
+						<option value="10" selecetd="selected">每页显示10条</option>
+						<option value="20">每页显示20条</option>
+						<option value="50">每页显示50条</option>
+					</select>百度的原始设定10条最有效且快速<br />
+					<select name="issw1">
+						<option value="0" selected="selected">开启</option>
+						<option value="2">显示</option>
+					</select><br />
+					<label><input type="radio" name="sh" checked="checked">显示</label>
+					<label><input type="radio" name="sh">不显示</label><br />
+					<label><input type="radio" name="stb" value="0" checked="checked">打开</label>
+					<label><input type="radio" name="stb" value="1">关闭</label><br />
+					<input type="submit" value="保存设置" /><input type="reset" value="恢复默认" /><br />
+					请启用浏览器cookie确保设置生效，<a href="javascript:;">登录</a>后操作可永久保存您的设置。
+				</form>
+			</div>
+		</div>
+		<!-- 高级搜索 -->
+		<div class="advs-search">
+			<div class="left">
+				<p>搜索结果：</p>
+				时间：<br />
+				文档格式：<br />
+				关键词位置：<br />
+				站内搜索：
+			</div>
+			<div class="center">
+				<p>
+					包含以下<span>全部</span>的关键词<br />
+					包含以下的完整关键词：<br />
+					包含以下任意一个关键词<br />
+					不包括以下关键词<br />
+				</p>
+				限定要搜索的网页的时间是<br />
+				搜索网页格式是<br />
+				查询关键词位于<br />
+				限定要搜索指定的网站是<br />
+			</div>
+			<div class="right">
+				<form>
+					<p>
+						<input type="text" name="q1" size="35" maxlength="100"><br />
+						<input type="text" name="q2" size="35" maxlength="100"><br />
+						<input type="text" name="q3" size="35" maxlength="100"><br />
+						<input type="text" name="q4" size="35" maxlength="100"><br />
+					</p>
+					<select name="gpc">
+						<option value="" selected="selected">全部时间</option>
+						<option value="stf=1528119153.75,1528205553.75|stftype=1">最近一天</option>
+						<option value="stf=1527600753.75,1528205553.75|stftype=1">最近一周</option>
+						<option value="stf=1525527153.75,1528205553.75|stftype=1">最近一月</option>
+						<option value="stf=1496669553.75,1528205553.75|stftype=1">最近一年</option>
+					</select><br />
+					<select name="ft">
+						<option value="">所有网页和文件</option>
+						<option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+						<option value="doc">微软 Word (.doc)</option>
+						<option value="xls">微软 Excel (.xls)</option>
+						<option value="ppt">微软 Powerpoint (.ppt)</option>
+						<option value="rtf">RTF 文件 （.rtf)</option>
+						<option value="all">所有格式</option>
+					</select><br />
+					<label><input type="radio" name="q5" value="" checked="checked">网页的任何地方</label>
+					<label><input type="radio" value="1" name="q5">仅网页的标题中</label>
+					<label><input type="radio" value="2" name="q5">仅在网页的URL中</label><br />
+					<input type="text" size="35" name="q6" maxlength="100">&nbsp;&nbsp;&nbsp;&nbsp;例如：baidu.com<br>
+					<input type="submit" value="高级搜索">
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- 登录框开始 -->
+	<div id="log-box">
+		<span class="close"></span>
+		<div class="move" onselectstart="return false;"></div>
+		<div class="title"><img src="baidu_jgylogo3.gif"><i>·</i><span>扫码登录</span></div>
+		<!-- 扫码登录 -->
+		<div class="qr-code-log">
+			<div class="qr-code"><img src="qrcode2.png"></div>
+			<div class="app">请使用<a href="https://mo.baidu.com/wuxian/?from=1019447z" target="_blank">百度App</a>扫码登录</div>
+			<div class="ad"><span>安全</span><i>高效</i><u>便捷</u></div>
+		</div>
+		<!-- 用户名登录 -->
+		<div class="user-name-log">
+			<form>
+				<input type="text" name="userName" placeholder="手机/邮箱/用户名" autocomplete="off"><br />
+				<input type="password" name="password" placeholder="密码" autocomplete="off"><br />
+				<div class="check-code">
+					<input type="text" placeholder="验证码" maxlength="6" autocomplete="off">
+					<img src=""><a href="javascript:;">换一张</a>
+				</div>
+				<label>
+					<input type="checkbox" name="memberPass" checked="checked">
+					下次自动登录
+				</label>
+				<input type="submit" value="登录">
+			</form>
+			<div><a href="https://passport.baidu.com/?getpassindex&tt=1528272823146&gid=1206B0D-FBA1-4353-8E88-3CB836DC5672&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F" target="_blank">忘记密码？</a><a href="javascript:;" style="float:right;">短信快捷登录</a></div>
+		</div>
+		<!-- 短信登录 -->
+		<div class="short-message-log">
+			<p>验证即登录，未注册将自动创建百度帐号</p>
+			<form>
+				<input type="text" name="username" class="tel" placeholder="请输入手机号" autocomplete="off">
+				<input type="text" name="password" class="check-code" placeholder="验证码" autocomplete="off">
+				<input type="button" value="发送验证码">
+				<input type="submit" value="登录">
+			</form>
+			<div><span>阅读并接受<a href="https://passport.baidu.com/static/passpc-account/html/protocal.html" target="_blank">《百度用户协议》</a></span><a href="javascript:;" style="float:right;">用户名密码登录</a></div>
+		</div>
+		<div class="footer">
+			<a href="javascript:;" class="user-name-log">用户名登录</a>
+			<span>|</span>
+			<a href="javascript:;" class="qq"></a>
+			<a href="javascript:;" class="sina"></a>
+			<a href="https://passport.baidu.com/v2/?reg&tt=1528272823146&overseas=undefined&gid=1206B0D-FBA1-4353-8E88-3CB836DC5672&tpl=mn&u=https%3A%2F%2Fwww.baidu.com%2F" target="_blank" class="now-reg">立即注册</a>
+		</div>
+	</div>
+	<div id="log-box-screen"></div>
+	<!-- 登录框结束 -->
+	<!-- 顶部结束 -->
+
+	<!-- 中间部分开始 -->
+	<div id="center">
+		<a href="https://www.baidu.com/"><img src="bd_logo1.png"title="点击一下，了解更多" /></a>
+		<form action="http://www.baidu.com/s" name="f">
+			<div class="search-input"><input type="text" name="wd" autocomplete="off"/><span></span></div>
+			<input type="submit" value="百度一下" />
+			<!-- 上传图片弹出盒 -->
+			<div class="pic-up">
+				<div class="pic-up-input"><input type="text" placeholder="在此处粘贴图片网址"  autocomplete="off"/><span></span></div>
+				<div class="pic-up-here">拖拽图片到这里<br /><span></span></div>
+				<div class="pic-up-file"><input type="file" /><span>本地上传图片</span></div>
+				<div class="close"></div>
+			</div>
+			<input type="reset" style="display:none;">
+		</form>
+	</div>
+	<!-- 中间部分结束 -->
+
+	<!-- 底部开始 -->
+	<div id="footer">
+		<div class="footer-content">
+			<p class="p1"></p>
+			<p class="p2">百度</p>
+			<p class="p3">
+				<a href="https://www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为主页</a>
+				<a href="http://home.baidu.com/">关于百度</a>
+				<a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a>
+				<a href="http://e.baidu.com/?refer=888">百度推广</a>
+			</p>
+			<p class="p4">
+				©2018 Baidu
+				<a href="https://www.baidu.com/duty/">使用百度前必读</a>
+				<a href="http://jianyi.baidu.com/">意见反馈</a>
+				京ICP证030173号
+				<span></span>
+				<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank">京公网安备11000002000001号</a>
+				<i></i>
+			</p>
+		</div>
+	</div>
+	<!-- 底部结束 -->
+
+
+<div id="ps">
+	制作本网页是为了做网页界面开发练习。
+	如有侵权请联系作者（zhongwei_web@163.com）删除。
+	目前此网页尚有一些问题，仅供练习、参考。<span>X</span></div>
+
+<div id="warning">本网页没有对IE8及IE8以下浏览器做优化，请使用更高版本的浏览器获取更佳的体验！<span>X</span></div>
+<style>
+#ps, #warning {
+	position: absolute;border: 1px solid #f6e8b0;top: 0;left: 0;right: 0;
+	z-index: 10;background: #fffbe3;text-align: center;font-size: 12px;
+}
+#ps span, #warning span {float: right;margin-right: 10px;cursor: pointer;color: #444;}
+#warning {color: red;display: none;top: 19px;}
+#ps span:hover, #warning span:hover {color: red;}
+</style>
+
+<script>
+
+
+
+// #ps, #warning
+
+$('#ps span').click(function () {
+	$('#ps').css('display','none');
+});
+
+$('#warning span').click(function () {
+	$('#warning').css('display','none');
+});
+
+var myBrowser = myexplorer();
+if (myBrowser == 'IE6' || myBrowser == 'IE7' || myBrowser == 'IE8') {
+	$('#warning').css('display','block');
+}
+
+
+
+
+// 返回浏览器版本，取自网上
+function myexplorer(){
+var explorer = window.navigator.userAgent;
+if (explorer.indexOf("QQBrowser")>=0 || explorer.indexOf("QQ")>=0){return myexplorer="腾讯QQ";
+}else if(explorer.indexOf("Safari")>=0 && explorer.indexOf("MetaSr")>=0){return myexplorer="搜狗";
+}else if (!!window.ActiveXObject || "ActiveXObject" in window){//IE
+if (!window.XMLHttpRequest){return myexplorer="IE6";
+}else if (window.XMLHttpRequest && !document.documentMode){return myexplorer="IE7";
+}else if (!-[1,] && document.documentMode && !("msDoNotTrack" in window.navigator)){return myexplorer="IE8";
+}else{//IE9 10 11
+var hasStrictMode=(function(){"use strict";return this===undefined;}()); 
+if (hasStrictMode){
+    if (!!window.attachEvent){return myexplorer="IE10";}else{return myexplorer="IE11";}
+}else{
+    return myexplorer="IE9";
+}
+}
+}else{//非IE
+if (explorer.indexOf("LBBROWSER") >= 0){return myexplorer="猎豹";
+}else if(explorer.indexOf("360ee")>=0){return myexplorer="360极速浏览器";
+}else if(explorer.indexOf("360se")>=0){return myexplorer="360安全浏览器";
+}else if(explorer.indexOf("se")>=0){return myexplorer="搜狗浏览器";
+}else if(explorer.indexOf("aoyou")>=0){return myexplorer="遨游浏览器";
+}else if(explorer.indexOf("qqbrowser")>=0){return myexplorer="QQ浏览器";
+}else if(explorer.indexOf("baidu")>=0){return myexplorer="百度浏览器";
+}else if(explorer.indexOf("Firefox")>=0){return myexplorer="火狐";
+}else if(explorer.indexOf("Maxthon")>=0){return myexplorer="遨游";
+}else if(explorer.indexOf("Chrome")>=0){return myexplorer="谷歌（或360伪装）";
+}else if(explorer.indexOf("Opera")>=0){return myexplorer="欧朋";
+}else if (explorer.indexOf("TheWorld") >= 0){return myexplorer="世界之窗";
+}else if(explorer.indexOf("Safari")>=0){return myexplorer="苹果";
+
+}else{return myexplorer="其他";
+}
+}
+}
+</script>
+
+
+</body>
+</html>
+
+

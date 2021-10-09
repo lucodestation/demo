@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo 导航</title>
+</head>
+<body>
+
+<h1>Demo 导航</h1>
+<div id="demo1"></div>
+
+<h2>下面的是很久以前做的</h2>
+<div id="demo2"></div>
+
+<script>
+(function () {
+  var arr = [
+    ['./auto-position', 'auto position'],
+    ['./color-card', '色卡，点击复制'],
+    ['./get-browser', '下载最新版浏览器'],
+    ['./your-browser', '检测用的啥浏览器']
+  ];
+  
+  var div = document.createElement('div');
+  
+  var l = arr.length;
+  for (var i = 0; i < l; i++) {
+    div.innerHTML += 
+    '<p><a href="' + arr[i][0] + '">' + arr[i][1] + '</a></p>';
+  }
+  
+  document.getElementById('demo1').appendChild(div);
+})();
+
+(function () {
+  var arr = [
+    ['./baidu', '仿百度首页'],
+    ['./ludashi', '仿鲁大师首页'],
+    ['./winbaicai', '仿大白菜首页'],
+    ['./xiaofuzi', '小夫子 - 一个官网首页'],
+    ['./zazar', '一个 Demo 页面'],
+    ['./2048', '2048 小游戏'],
+    ['./mine-sweeper', '扫雷小游戏'],
+    ['./snake', '贪吃蛇小游戏'],
+    ['./tetris', '俄罗斯方块小游戏'],
+  ];
+  
+  var div = document.createElement('div');
+  
+  var l = arr.length;
+  for (var i = 0; i < l; i++) {
+    div.innerHTML += 
+    '<p><a href="' + arr[i][0] + '">' + arr[i][1] + '</a></p>';
+  }
+  
+  document.getElementById('demo2').appendChild(div);
+})();
+
+
+</script>
+</body>
+</html>

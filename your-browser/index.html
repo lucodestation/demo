@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>your-browser</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    #app {
+      position: relative;
+      top: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h2 id="app">您使用的浏览器是 <span></span> 或是已过时的浏览器</h1>
+
+<script src="./js/index.js"></script>
+<script>
+
+// 用法一
+// 获取浏览器版本
+var browserVersion = yourBrowser.getVersion();
+
+// 用法二
+// 判断浏览器版本
+if (yourBrowser.version(['<=', 'IE11'])) {
+  document.getElementById('app').getElementsByTagName('span')[0].innerHTML += yourBrowser.getVersion();
+} else {
+  document.getElementById('app').innerHTML = '您使用的是现代浏览器。';
+}
+
+// 用法三
+// 根据判断结果决定是否显示浏览器版本过低提示
+yourBrowser.version(['<', 'IE11']) && yourBrowser.showTip();
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/*
+* @Author: Administrator
+* @Date:   2018-03-28 09:48:03
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-03-28 13:30:40
+*/
+body{font-family:'microsoft yahei';}
+body,div,p,ul,ol,li,h1,h2,h3,h4,h5,h6,table,tr,td,dl,dt,dd{
+	margin:0;
+	padding:0;
+}
+img{
+	border:0;
+	/* IE8下图片做成超链接默认会有边框 */
+}
+a{
+	text-decoration:none;
+	outline:none;
+	/* IE8下点击超链接默认有虚线轮廓 */
+}
+ul{
+	list-style:none;
+}
+
+.public-header{
+	height:112px;
+	width:1100px;
+	margin:0 auto;
+}
+.public-header .public-header-logo{
+	float:left;
+	margin-top:40px;
+}
+.public-header .public-header-nav{
+	float:right;
+	margin-top:48px ;
+}
+.public-header .public-header-nav a{
+	margin-left:48px;
+	color:#3b3b3b;
+}
+
+.public-footer{
+	background:#3b3b3b;
+}
+
+.public-footer .public-footer-content{
+	width:1100px;
+	height:218px;
+	margin:0 auto;
+	padding-top:100px;
+}
+.public-footer .public-footer-content ul{
+	float:left;
+	margin-right:40px;
+}
+.public-footer .public-footer-content ul li{
+	width:230px;
+	color:#ebebeb;
+	line-height:30px;
+}
+.public-footer .public-footer-content ul li a{
+	color:#ebebeb;
+}
+.public-footer .public-footer-content .font-weight,.public-footer .public-footer-content a{
+	font-weight:bold;
+}
+.public-footer .public-footer-logo-ul{
+	margin-top:-16px;
+}

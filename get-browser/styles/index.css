@@ -1,0 +1,203 @@
+/* 整体样式 */
+body {
+  font: 16px/1.5 "Microsoft Yahei", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", "sans-serif";
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+body, h1, h2, h3, h4 {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 标题位于顶层 */
+h1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: url("../images/1px30.png");
+  font-size: 16px;
+  line-height: 60px;
+}
+h3, h4 {
+  font-size: 12px;
+}
+
+/* 容器撑满可视窗口 */
+html, body, .container {
+  width: 100%;
+  height: 100%;
+}
+
+/* ========== ========== ==========*/
+/* 容器和子元素 */
+  /* 各子元素的背景 */
+  .chrome { background-color: #f2b635; }
+  .firefox { background-color: #f19a2a; }
+  .edge { background-color: #00caff; }
+  .safari { background-color: #00a0e6; }
+  .opera { background-color: #f25648; }
+  /* 光晕背景 */
+  .item:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    top: -20%;
+    background: url("../images/shadow.png") no-repeat center;
+  }
+
+  /* 修复鼠标快速左右滑动时过渡过程中最右侧出现空白 */
+  /* IE10+ 有效，IE9 及以下的玩意儿不支持过渡😂 */
+  .container { display: flex; }
+  /* flex: 主轴增长系数1 主轴收缩系数1 主轴初始大小auto */
+  .item { flex: 1 1 auto; }
+  .item { transition: width .3s; }
+
+  /* IE9 及以下 */
+  .item {
+    float: left;
+    width: 20%;
+    height: 100%;
+  }
+
+  /* hover 效果 */
+  .container:hover .item { width: 16%; }
+  .container .item:hover { width: 36%; }
+
+  /* 避免 hover 后出现水平滚动条 */
+  .item { overflow: hidden; }
+/* 容器和子元素结束 */
+
+/* ========== ========== ==========*/
+/* 子元素中的内容 */
+  /* item 子元素用到了定位 */
+  .item { position: relative; }
+
+  /* logo 垂直位置 */
+  .logo {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+  }
+  /* logo 背景 */
+  .logo:before {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: url("../images/browsers-bg-edge.png") no-repeat;
+  }
+  .firefox .logo:before { background-position: -200px top; }
+  .edge .logo:before { background-position: -400px top; }
+  .safari .logo:before { background-position: -600px top; }
+  .opera .logo:before { background-position: -800px top; }
+  .item:hover .logo:before {
+    background-position-y: bottom;
+  }
+
+  /* 下载按钮 */
+  .download {
+    position: absolute;
+    width: 100%;
+    /* 垂直位置 */
+    top: 0;
+    bottom: -40%;
+    /* 水平居中 */
+    margin: auto;
+    height: 90px;
+    z-index: 99;
+  }
+  a {
+    display: inline-block;
+    width: 160px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    font-weight: bold;
+  }
+  a:hover {
+    background-color: #fff;
+    color: red;
+  }
+  .chrome a:hover { color: #f2b635; }
+  .firefox a:hover { color: #f19a2a; }
+  .edge a:hover { color: #00caff; }
+  .safari a:hover { color: #00a0e6; }
+  .opera a:hover { color: #f25648; }
+
+  /* IE9+ */
+  a {
+    border-radius: 50px;
+    transition: color .3s, background-color .3s;
+  }
+
+  a + h4 {
+    color: #ddd;
+    margin-top: 10px;
+  }
+
+  /* 默认隐藏下载按钮 */
+  /* IE9- 没有过渡效果 */
+  .download {
+    transition: opacity .3s;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+  }
+  .item:hover .download {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+  }
+  
+/* 底部系统图标 */
+  .system {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+  }
+  i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url("../images/operatingsystems-bg.png") no-repeat;
+  }
+  .mac {
+    background-position: center;
+  }
+  .linux {
+    background-position: right;
+  }
+
+  /* 缩小图标，IE8 不支持 */
+  i, .logo:before {
+    transform: scale(.5);
+  }
+
+  /* 窄屏，IE8 不支持 */
+  @media screen and (max-width: 1000px) {
+    .container {
+      display: block;
+    }
+    .item {
+      float: none;
+      width: 100% !important;
+      height: 590px;
+    }
+    .logo {
+      top: 10%;
+    }
+    .logo > h2 {
+      margin-top: -30px;
+    }
+    .download {
+      bottom: -20%;
+    }
+    a {
+      line-height: 30px;
+      border-radius: 30px;
+    }
+  }

@@ -1,0 +1,53 @@
+body, p, pre, h1, h2, h3, h4, h5, h6, hr, ul, ol, dl, dl dd  {
+	margin: 0;
+}
+body, button, input, textarea, select {
+	font-family: 'microsoft yahei';
+	color: #444;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+ul, ol, table tr th, table tr td, input, button {
+	padding: 0;
+}
+ul, ol {
+	list-style: none;
+}
+table, table tr, table tr th, table tr td {
+	border: 1px solid #444;
+}
+table {
+	border-collapse: collapse;
+}
+table tr th, strong, b {
+	font-weight: normal;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	outline: none;
+}
+u {
+	text-decoration: none;
+}
+img, button, input {
+	border: 0;
+	outline: 0;
+}
+hr {
+	border-style: solid;
+}
+i {
+	font-style: normal;
+}
+/* address,cite,dfn,em,var {
+	font-style: normal;
+} */
+/* code,kbd,pre,samp {
+	font-family: courier new,courier,monospace;
+}
+a:hover {
+	text-decoration: underline
+} */

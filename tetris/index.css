@@ -1,0 +1,253 @@
+body {
+	margin: 0;
+	color: #edcc62;
+	font-family: 'Microsoft YaHei';
+	font-size: 16px;
+	background-color: #424242;
+	text-shadow: 3px 3px 3px #444;
+}
+h1 {
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+	padding: 10px;
+	text-indent: -6em;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover span {
+	text-decoration: underline;
+}
+main {
+	position: relative;
+	width: 522px;
+	height: 842px;
+	margin: 0 auto;
+	/*background-color: #424242;*/
+	padding-right: 200px;
+}
+
+	section {
+		position: absolute;
+		/*height: 100%;*/
+		width: 522px;
+		height: 842px;
+		background-color: #494949;
+	}
+		section ul {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			overflow: auto;
+			border: 1px solid #edcc62;
+		}
+		section li {
+			float: left;
+			width: 38px;
+			height: 38px;
+			border: 1px solid #424242;
+		}
+	.tips {
+		position: absolute;
+		top: 1px;
+		left: 1px;
+		width: 520px;
+		height: 840px;
+		/*line-height: 840px;*/
+		font-size: 80px;
+		text-align: center;
+		font-weight: bold;
+
+	}
+	.tipsbg {
+		background-color: rgba(210, 210, 210, .3);
+	}
+	.tips div {
+		position: absolute;
+		top: -160px;
+		bottom: 0;
+		width: 100%;
+		height: 160px;
+		margin: auto;
+	}
+	.tips div a {
+		font-size: 30px;
+		display: block;
+	}
+	.tips .none {
+		display: none;
+	}
+
+	aside {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 162px;
+		height: 100%;
+		/*background: #666;*/
+	}
+		.next {
+			overflow: auto;
+			border: 1px solid #edcc62;
+			background-color: #494949;
+		}
+		.next i {
+			float: left;
+			width: 38px;
+			height: 38px;
+			border: 1px solid #424242;
+		}
+		.info {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 142px;
+			padding: 0 10px;
+			height: 240px;
+			margin: auto;
+			/*background: #080;*/
+			line-height: 60px;
+		}
+		.info span {
+			position: absolute;
+			right: 10px;
+			/*background-color: red;*/
+			text-align: right;
+		}
+		.control {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			/*background: #00f;*/
+			padding: 20px 0;
+		}
+		.control a {
+			display: block;
+			width: 130px;
+			line-height: 40px;
+			margin: 0 auto;
+			border: 1px solid;
+			background-color: #555;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			border-radius: 6px;
+		}
+		.control a:first-child {
+			margin-bottom: 20px;
+		}
+		.control a:hover {
+			background-color: #424242;
+		}
+
+
+
+
+main .color0 {
+	background-color: #4386f0;
+	border-top-color: #c6e0ff;
+	border-right-color: #1c46cd;
+	border-bottom-color: #215ae1;
+	border-left-color: #76adfc;
+}
+main .color1 {
+	background-color: #24b8e0;
+	border-top-color: #c2ffff;
+	border-right-color: #0c7db5;
+	border-bottom-color: #088ac4;
+	border-left-color: #64cfde;
+}
+main .color2 {
+	background-color: #66bf29;
+	border-top-color: #d5fdbf;
+	border-right-color: #2c880b;
+	border-bottom-color: #2f953b;
+	border-left-color: #96ed6f;
+}
+main .color3 {
+	background-color: #ed8127;
+	border-top-color: #ffdeb1;
+	border-right-color: #da400e;
+	border-bottom-color: #d3440c;
+	border-left-color: #fd9d43;
+}
+main .color4 {
+	background-color: #f3c622;
+	border-top-color: #feefc1;
+	border-right-color: #e68f0c;
+	border-bottom-color: #e8a11a;
+	border-left-color: #fcd149;
+}
+main .color5 {
+	background-color: #e82d1a;
+	border-top-color: #fdb5a6;
+	border-right-color: #a90f0c;
+	border-bottom-color: #cf231c;
+	border-left-color: #fe4c2f;
+}
+main .color6 {
+	background-color: #c24af9;
+	border-top-color: #f3d4fe;
+	border-right-color: #7900e4;
+	border-bottom-color: #9421eb;
+	border-left-color: #dd8ffc;
+}
+
+
+
+.style1 section, .style1 .next {
+	background-color: transparent;
+}
+
+.style2 [class ^= color] {
+	width: 24px;
+	height: 24px;
+	border-width: 8px;
+}
+
+/*div {
+	border: 1px solid red;
+	width: 520px;
+	height: 840px;
+	margin: 0 auto;
+	padding: 5px;
+}*/
+/*span {
+	float: left;
+	margin: 5px;
+	width: 24px;
+	height: 24px;
+}
+span.current {
+	background-color: #555;
+	outline: 3px solid #555;
+}*/
+
+
+.style3 {
+	background: #ddd;
+	color: #424242;
+}
+.style3 aside a {
+	background: #bbb;
+}
+.style3 aside a:hover {
+	background: #aaa;
+}
+.style3 section, .style3 .next {
+	background-color: #9faf88;
+}
+.style3 section ul li, .style3 i {
+	margin: 5px;
+	width: 24px;
+	height: 24px;
+	border: 3px solid #9faf88;
+	background-color: #97a780;
+	outline: 3px solid #97a780;
+}
+.style3 [class ^= color] {
+	background-color: #262626;
+	outline: 3px solid #262626;
+}

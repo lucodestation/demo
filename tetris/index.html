@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>俄罗斯方块</title>
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<h1>俄罗斯方块</h1>
+<main>
+	<section></section>
+	<div class="tips tipsbg">
+		<div class="tips1">俄罗斯方块</div>
+		<div class="tips2 none">暂停</div>
+		<div class="tips3 none">Game over!<a href="javascript:">新游戏(<span>N</span>)</a></div>
+	</div>
+	<aside>
+		<div class="next"></div>
+		<div class="info">
+			<!-- <div>等级:<span class="level">0</span></div> -->
+			<div title="分数计算规则：单次消除&#13;1行 8分 (2的3次方)&#10;2行 27分 (3的3次方)&#10;3行 64分 (4的3次方)&#10;4行 125分 (5的3次方)">分数:<span class="score">0</span></div>
+			<div title="已落到底的块数">块数:<span class="pices">0</span></div>
+			<div title="已消除的行数">行数:<span class="lines">0</span></div>
+		</div>
+		<div class="control">
+			<a href="javascript:" class="start">开始(<span>S</span>)</a>
+			<a href="javascript:" class="pause">暂停(<span>P</span>)</a>
+		</div>
+	</aside>
+</main>
+
+
+<script src="./index.js"></script>
+</body>
+</html>

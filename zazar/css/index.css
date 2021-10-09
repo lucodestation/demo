@@ -1,0 +1,211 @@
+.index-banner{
+	/* width:1500px; */
+	/* 这里如果设置很宽的宽度，浏览器窗口缩小会出现水平滚动条 */
+	height:360px;
+	margin:0 auto;
+	background:url(../images/index-banner-bg.png) no-repeat center;
+	padding-top:210px;
+}
+.index-banner img{
+	display:block;
+	margin:0 auto;
+}
+.index-banner p{
+	text-align:center;
+	color:#FFFFFF;
+	margin-top:20px;
+}
+.index-banner p span{
+	width:40px;
+	display:inline-block;
+	border-top:1px solid #FFF;
+	vertical-align:middle;
+}
+.index-banner p span.tips-l{
+	margin-right:40px;
+}
+.index-banner p span.tips-r{
+	margin-left:40px;
+}
+
+
+.index-menu .index-menu-header{
+	/* width:1500px; */
+	margin:0 auto;
+	border-top:4px solid #f34949;
+}
+.index-menu .index-menu-header p{
+	width:156px;
+	height:70px;
+	background:#f34949;
+	margin:0 auto;
+	color:#FFF;
+	line-height:60px;
+	text-align:center;
+}
+.index-menu .index-menu-header p:after{
+	content:"";
+	display:block;
+	width:0;
+	height:0;
+	border-left:78px solid transparent;
+	border-right:78px solid transparent;
+	border-bottom:10px solid #FFF;
+}
+
+.index-menu .index-menu-list{
+	width:1100px;
+	margin:0 auto;
+	overflow:hidden;
+	/* 
+		这里设置overflow:hidden;是因为要把下面的ul宽度设置为大于这个元素宽度
+		设置ul宽度是为了容纳li的宽度加上li的margin-right的宽度
+	 */
+	margin-top:80px;
+}
+.index-menu .index-menu-list ul{
+	width:1218px;
+}
+.index-menu .index-menu-list ul li{
+	display:inline-block;
+	float:left;
+	width:492px;
+	margin-right:117px;
+	margin-bottom:60px;
+}
+.index-menu .index-menu-list ul li a{
+	display:block;
+	width:492px;
+}
+.index-menu .index-menu-list ul li a h3{
+	font-weight:normal;
+	color:#555;
+}
+.index-menu .index-menu-list ul li a h3 span{
+	float:right;
+}
+.index-menu .index-menu-list ul li a h3:after{
+	content:"";
+	display:inline-block;
+	width:192px;
+	border-top:1px solid #b7b7b7;
+	float:right;
+	margin-right:42px;
+	margin-top:12px;
+}
+.index-menu .index-menu-list ul li a p{
+	color:#b7b7b7;
+}
+.index-menu a.index-menu-more{
+	display:block;
+	width:130px;
+	height:32px;
+	border:1px solid #b7b7b7;
+	margin:0 auto;
+	margin-top:30px;
+	color:#b7b7b7;
+	line-height:32px;
+	text-align:center;
+}
+.index-menu a.index-menu-more span:after{
+	content:"";
+	display:inline-block;
+	width:0;height:0;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:7px solid #b7b7b7;
+	margin-left:11px;
+}
+.index-menu a.index-menu-more:after{
+	content:"";
+	display:inline-block;
+	width:0;height:0;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:7px solid #FFF;
+	position:absolute;
+	margin-top:14px;
+	margin-left:-10px;
+}
+.index-menu .index-menu-card{
+	width:1100px;
+	margin:0 auto;
+	margin-top:200px;
+	overflow:hidden;
+}
+.index-menu .index-menu-card .index-menu-card1{
+	width:1164px;
+}
+.index-menu .index-menu-card .index-menu-card1 div{
+	width:230px;
+	margin-right:60px;
+	margin-top:75px;
+	display:inline-block;
+}
+.index-menu .index-menu-card .index-menu-card1 div p{
+	margin-top:28px;
+	margin-bottom:10px;
+}
+.index-menu .index-menu-card h3{
+	width:1100px;
+	font-weight:400;
+}
+.index-menu .index-menu-card .index-menu-card1 div p span{
+	float:right;
+}
+.index-menu .index-menu-card .index-menu-card1 div ul li{
+	float:left;
+	width:12px;
+	height:12px;
+	background:url(../images/star1.png);
+	margin-right:6px;
+}
+.index-menu .index-menu-card .index-menu-card1 div ul li.no-star{
+	background:url(../images/star2.png);
+}
+.index-menu .index-menu-card .index-menu-card1 h3 span{
+	float:right;
+}
+.index-menu .index-menu-card .index-menu-card1 h3 span a{
+	display:inline-block;
+	width:0;height:0;
+	border:4px solid #b7b7b7;
+	border-radius:50%;
+	vertical-align:top;
+	margin-left:11px;
+}
+.index-menu .index-menu-card .index-menu-card1 h3 span a.selected{
+	border-color:#555;
+}
+.index-menu .index-menu-card .index-menu-card2{
+	margin-top:230px;
+}
+.index-menu .index-menu-card .index-menu-card2 div{
+	width:1100px;
+	height:381px;
+	background:green;
+	margin-top:130px;
+	margin-bottom:200px;
+	font-size:0;
+}
+.index-menu .index-menu-card .index-menu-card2 div span{
+	display:inline-block;
+	width:287px;
+}
+.index-menu .index-menu-card .index-menu-card2 div span img:first-child{
+	position:absolute;
+	margin-top:-176px;
+}
+/* 
+.index-menu .index-menu-card .index-menu-card2 div span img[src="images/card7.png"]{
+	position:absolute;
+}
+ */
+.index-menu .index-menu-card h3 u{
+	display:inline-block;
+	width:200px;
+	height:5px;
+	border-top:1px solid #b7b7b7;
+	vertical-align:middle;
+	margin-left:16px;
+}

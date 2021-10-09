@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 0 0 8px #000;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* 容器 */
+.container { height: 100vh; }
+/* 行 */
+.row { height: 25%; }
+/* 格 */
+.cell {
+  float: left;
+  width: 20%;
+  height: 100%;
+  position: relative;
+}
+
+/* 文字和按钮 */
+.cell:before {
+  content: attr(data-clipboard-text);
+  height: 22px;
+}
+.cell:hover:before {
+  opacity: 0;
+}
+.cell:before, .copyButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  transition: all .3s;
+}
+.copyButton {
+  opacity: 0;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 30px;
+  width: 80px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 8px #000;
+}
+.cell:hover .copyButton {
+  opacity: 1;
+}
+.cell .copyButton.copied {
+  box-shadow: inset 0 0 8px #fff;
+}
+
+/* 处理背景色最浅的那个格 */
+.row:nth-child(3) .cell:nth-child(4) {
+  color: #888;
+  text-shadow: 0 0 8px;
+}
+.row:nth-child(3) .cell:nth-child(4) .copyButton.copied {
+  box-shadow: inset 0 0 8px #fff;
+}

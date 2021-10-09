@@ -1,0 +1,114 @@
+
+body {
+	margin: 0;
+	color: #424242;
+	font-family: arial 'Microsoft YaHei';
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+	margin: 0;
+}
+	h1 img {
+		width: 36px;
+		vertical-align: text-bottom;
+		margin-right: 5px;
+		margin-left: -38px;
+	}
+
+.new-game {
+	width: 500px;
+	margin: 0 auto;
+	padding: 0 0 10px 0;
+	text-align: right;
+}
+	.new-game a {
+		display: inline-block;
+		padding: 2px 6px;
+		border: 1px solid #aaa;
+		background-color: #eee;
+		color: inherit;
+		text-decoration: none;
+	}
+	.new-game a:hover {
+		background-color: #ddd;
+		color: brown;
+	}
+
+
+.game-map {
+	position: relative;
+	width: 1500px;
+	height: 800px;
+	border: 5px solid #424242;
+	margin: 0 auto;
+}
+	.game-map ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	.game-map li {
+		float: left;
+		width: 48px;
+		height: 48px;
+		border: 1px solid #424242;
+		background-color: #777;
+		cursor: pointer;
+	}
+	.game-map li:hover {
+		background-color: #888;
+	}
+	.game-map li.flag {
+		background-image: url("flag.png");
+	}
+	.game-map li.opened {
+		background-color: rgb(201,210,229);
+		font-size: 35px;
+		text-align: center;
+		line-height: 48px;
+		font-weight: bold;
+	}
+	.game-map li.num1 { color: rgb(64,82,193); }
+	.game-map li.num2 { color: rgb(25,105,1); }
+	.game-map li.num3 { color: rgb(172,5,6); }
+	.game-map li.num4 { color: rgb(34,36,147); }
+	.game-map li.num5 { color: rgb(129,0,5); }
+	.game-map li.num6 { color: rgb(7,125,134); }
+	.game-map li.num7 { color: rgb(185,7,10); }
+	.game-map li.num8 { color: rgb(173, 5, 8); }
+	.game-map li.mine {
+		background-image: url("mine.png");
+	}
+	.game-map li.flag.mine{/* 点到雷，游戏结束，有雷的li上插有旗的状态 */
+		background-image: url("flag.png"), url("mine.png");
+	}
+	.game-map .game-end {
+		position: absolute;
+		top: 0;left: 0;bottom: 0;right: 0;
+		text-align: center;
+		line-height: 800px;
+		font-weight: bold;
+		font-size: 100px;
+		background: rgba(255, 255, 255, .4);
+	}
+
+
+/* 游戏信息 */
+.mine-info {
+	width: 500px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+	.mine-info .time {
+		float: left;
+	}
+	.mine-info .last-num {
+		text-align: right;
+	}
+	.mine-info span {
+		display: inline-block;
+		width: 35px;
+		text-align: center;
+	}
