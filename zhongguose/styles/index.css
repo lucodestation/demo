@@ -38,12 +38,12 @@ body {
   position: fixed;
   width: 200px;
   height: 60px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 3%;
+  right: 3%;
+  /* bottom: 0; */
+  /* left: 0; */
   margin: auto;
-  background-color: #ffffff55;
+  background-color: #ffffffaa;
   font-size: 28px;
   color: #444;
   box-shadow: 0 0 2px #fff, 0 0 4px #000;
