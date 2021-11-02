@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中国色</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <h1>中国色</h1>
+    <div id="app">
+      <p>
+        共 {{ colors.length }} 个颜色，来自
+        <a href="http://zhongguose.com/" target="_blank">中国色</a>
+        。
+      </p>
+      <p>点击颜色值可复制到剪贴板。</p>
+
+      <div class="container">
+        <div
+          class="item"
+          v-for="color in colors"
+          :key="color.name"
+          :style="{
+          color:
+            parseInt(color.hex.substr(1), 16) > parseInt('999999', 16)
+              ? '#000'
+              : '#fff',
+          backgroundColor: color.hex,
+        }"
+        >
+          <div>{{ color.name }}</div>
+          <div class="hex" :data-clipboard-text="color.hex" title="点击复制">
+            {{ color.hex }}
+          </div>
+          <div
+            class="rgb"
+            :data-clipboard-text="`rgb(${color.RGB[0]}, ${color.RGB[1]}, ${color.RGB[2]})`"
+            title="点击复制"
+          >
+            {{ `rgb(${color.RGB[0]}, ${color.RGB[1]}, ${color.RGB[2]})` }}
+          </div>
+        </div>
+      </div>
+
+      <div
+        :class="['show', {
+        'active': show
+      }]"
+      >
+        已复制
+      </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.min.js"></script>
+
+    <script src="./js/index.js" type="module"></script>
+
+    <!-- “浏览器版本已过时”提示 -->
+    <script src="https://lucodestation.gitee.io/demo/your-browser/js/index.js"></script>
+    <script>
+      yourBrowser.version(["<", "IE9"]) && yourBrowser.showTip();
+    </script>
+  </body>
+</html>
