@@ -1,12 +1,6 @@
 import { colors } from "../assets/colors.js";
 
-const wait = (time) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve();
-    }, time);
-  });
-};
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 new Vue({
   el: "#app",
